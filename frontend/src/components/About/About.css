@@ -1,0 +1,57 @@
+.Aboutus{
+        min-height: 50px;
+        width: 100%;
+        line-height: 30rem;
+        background-position:absolute;
+        background-repeat: no-repeat;
+        background-size: cover;     
+}
+
+.Platform-desc{
+    background-color: whitesmoke;
+  padding: 20px 20px 20px 20px;
+}
+.AboutusOverlay{
+    position: center;
+    min-height: 50px;  /*seems like the above class min height */
+   width: 100%;
+}
+.bottom {
+    background: #086fec none repeat scroll 0 0;
+    height: 3px;
+    width: 100px;
+    margin: -1.9rem auto 0;
+    margin-bottom: 3rem;
+    margin-left: 8rem;  
+}
+.aboutDes{
+    margin: 120px  120px  120px  120px;
+    color: rgb(238, 13, 88);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutFeatures{
+    margin: 90px  90px  90px  500px;
+}
+.aboutmoti{
+    background-color: rgb(15, 14, 14); 
+}
+.question{
+    color: rgb(177, 10, 10);
+    margin-top: 10rem ;  
+}
+.aboutImage {
+    height: 450px;
+    background-color: #086fec;
+    border-radius: 100%;
+    justify-content: center;
+    width: 100%;
+}
+@media (max-width: 991px) {
+    .aboutImage {
+        height: 100%;
+    }
+    .moti{
+        margin-top: 50px;
+    }
+  }
+

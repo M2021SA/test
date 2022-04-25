@@ -1,0 +1,23 @@
+.navTitle{
+    font-family: 'Montserrat',sans-serif;
+    color: blanchedalmond;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.NaveScroll{
+    font-family: 'Montserrat',sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+.active {
+    color: white ;
+    margin: 8px;
+    text-decoration: none ;
+}
+
+.logo{
+   width: 6em;
+}

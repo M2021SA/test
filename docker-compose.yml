@@ -1,0 +1,43 @@
+# docker_tutorial/docker-compose.yml
+
+version: "3"
+services:
+
+  database:
+    image: postgres:12.7-alpine
+    restart: always
+    volumes:
+        - ./backup_data/db:/var/lib/postgresql/data
+    environment:
+        - POSTGRES_DB=postgres
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=postgres
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    
+    volumes:
+      - ./backend:/app
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - database
+    
+   
+  frontend:
+    depends_on:
+      - "backend"
+    container_name: frontend
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    
+    command: npm start 
+    volumes:
+      - ./frontend/src:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+      
+    ports:
+      - 3000:3000
+  

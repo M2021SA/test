@@ -1,0 +1,23 @@
+.LoginPage {
+    background-color:whitesmoke;
+    margin: 130px 0px 150px 0px;
+}
+.LoginForm{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.FormStyle{
+    margin: 10px 0px 15px 0px;
+}
+.ButtonStyle{
+    color: goldenrod;
+}
+.errorM{
+    color: red;
+}
+.messagesuccess{
+color: darkgreen;
+}
+
+
+
